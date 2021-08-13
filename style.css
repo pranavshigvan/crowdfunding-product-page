@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+header {
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    padding: 1rem;
+    background-image: url("images/image-hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+nav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: none;
+    z-index: 50;
+}
+#close {
+    display: none;
+}
+.collapsed .menu {
+    display: block;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu-link {
+    padding: 0px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.collapsed .menu-link {
+    text-align: left;
+    padding: 25px 35px;
+    display: block;
+    
+}
+.collapsed .menu-link:nth-child(1), .collapsed .menu-link:nth-child(2) {
+    border-bottom:2px solid #e1e1e1;
+}
+.collapsed #open {
+    display: none;
+}
+.collapsed #close {
+    display: block;
+}
+section {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+}
+.container {
+    width: 100%;
+    position: relative;
+    background-color: #fafafa;
+}
+.content {
+    padding: 0.5rem;
+    top: -70px;
+}
+
+p {
+    color: hsl(0, 0%, 48%);
+    margin: 15px 0;
+}
+.card {
+    width: 90%;
+    margin: 1.5rem auto;
+    padding:1rem ;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px #f8f8f8;
+}
+
+.intro {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.intro-logo {
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+}
+.intro h1 {
+    margin: 20px auto;
+}
+.intro-buttons {
+    display: flex;
+    justify-content: center;
+}
+.intro-buttons button {
+    width: 215px;
+}
+.bookmark {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color:hsl(0, 0%, 48%) ;
+
+    color: white;
+}
+.bookmarked {
+    color: hsl(176, 50%, 47%) ;
+}
+.bookmarked .bookmark-icon {
+    color: hsl(176, 50%, 47%);
+}
+.bookmark-icon {
+    width: 50px;
+}
+.stats {
+    text-align: center;
+}
+.stats h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.stats hr {
+    width: 25%;
+    height: 0px;
+    margin: 0 auto;
+}
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #f4f4f4;
+    margin-bottom: 25px;
+}
+.fill {
+    background-color:hsl(176, 50%, 47%) ;
+    border-radius: inherit;
+    height: inherit;
+    width: 85%;
+}
+.numbers>div {
+    padding: 1rem;
+}
+.about .card {
+    border: 1px solid #e1e1e1;
+}
+.about h1 {
+    font-size: 35px;
+}
+.about p {
+    margin: 20px 0;
+}
+.about h1 span {
+    font-size: 1rem;
+    color: hsl(0, 0%, 48%);
+}
+h4 {
+    margin-top: 5px;
+    color:hsl(176, 50%, 47%) ;
+}
+button {
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 15px;
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+.about button {
+    width: 160px;
+    margin: 20px 0;
+}
+.disable {
+    background-color:hsl(0, 0%, 48%) ;
+}
+.disable:hover {
+    background-color:hsl(0, 0%, 48%) ;
+}
+.back-project {
+    display: none;
+    padding: 1rem;
+    position: absolute;
+    z-index: 10;
+}
+.back-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.back-project .card {
+    border: 1px solid #e1e1e1;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+.radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.checked.card {
+    border: 2px solid hsl(176, 72%, 28%);
+}
+.checked .pledge-input {
+    display: block;
+}
+input[type="radio"] {
+    margin-right:10px;
+    border: 0px;
+    width: 7%;
+    height: 2em;
+}
+.back-project h1 span {
+    font-size: 1rem;
+    color: hsl(0, 0%, 48%);
+}
+.pledge-input {
+    display: none;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 15px;
+}
+.pledge-btn input {
+    width: 90px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #e1e1e1;
+    padding: 0 25px;
+    
+}
+.continue {
+    padding: 0 25px;
+}
+.thanks-card {
+    display: none;
+    text-align: center;
+    z-index: 10;
+}
+.thanks-card button {
+    width: 100px;
+    
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black; 
+    opacity: 50%;
+    z-index: 5;
+}
+@media (min-width:576px) {
+    body {
+        font-size: 18px;
+    }
+    header {
+        background-image: url("images/image-hero-desktop.jpg"); 
+        
+        
+    }
+    .intro-buttons {
+        justify-content: space-between;
+    }
+    .bookmark {
+        width: auto;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+    }
+    .bookmark-icon {
+        margin-right: 15px;
+    }
+    #open {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-link {
+        color: white;
+    }
+    .numbers {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .numbers hr {
+        transform-origin: 50% 50%;
+        transform: rotate(90deg);
+    }
+    .card-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section {
+        width: 75%;
+        max-width: 576px;
+    }
+}                                                                                                                                                                                                     
